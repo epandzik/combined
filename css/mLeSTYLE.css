@@ -59,10 +59,6 @@ span#swap {
 }
 }
 */
-
-@media only screen and (max-device-width: 480px) {
-    
-}
     
 /* http://stackoverflow.com/questions/21610677/how-evenly-space-divs-each-of-a-different-width-within-a-parent-div */
 .navList {
@@ -118,6 +114,13 @@ nav {
 .fixed .nav-inner {
     margin: 0;
 }
+
+/*styling slimmenu*/
+#navigation .slimmenu ol li {
+    display: block;
+    text-align: center;
+}
+
 
 /*for resizing thumbnails on Portfolio page*/
 #thumbsContainer {
