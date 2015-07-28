@@ -1,15 +1,14 @@
 h1 {
     font-family: "Gentium Book Basic", serif;
-    font-weight: bold;
     color: #000000;
     font-size: 1.75em;
     padding-left: 6.82%;
     padding-right: 15.91%;
+    margin-top: 2.5vw;
 }
 
 h2 {
     font-family: "Gentium Book Basic", serif;
-    font-weight: bold;
     color: #000000;
     font-size: 1.5em;
     padding-left: 6.82%;
@@ -18,7 +17,6 @@ h2 {
 
 h3 {
     font-family: "Gentium Book Basic", serif;
-    font-weight: bold;
     color: #000000;
     font-size: 1.25em;
     padding-left: 6.82%;
@@ -103,13 +101,14 @@ nav {
     margin-top:0px;
     left:0;
     width:100%;
-    -webkit-box-shadow: 0 2px 2px 2px rgba(0,0,0,.1);
-    box-shadow: 0 2px 2px 2px rgba(0,0,0,.1);
+
 }
 
 .fixed .navList {
     margin-top:0px;
     margin-bottom:0px;
+    -webkit-box-shadow: 0 2px 2px 2px rgba(0,0,0,.1);
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,.1);
 }
 
 .fixed .nav-inner {

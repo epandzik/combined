@@ -1,6 +1,19 @@
-/* http://codepen.io/terrorsaurusrex/pen/gluFh */
+/* http://www.internetkultur.at/simple-hamburger-drop-down-menu-with-css-and-jquery/ */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (min-device-width: 801px) {
+nav {
+    .mobile-nav {
+        display: none;
+    }
+}
+}
+
+
+@media only screen and (min-width: 0px) and (max-device-width: 800px) {
+.navList ul {
+    display: none !important;
+}
+    
 nav {
     .menu-btn div {
 	position: absolute;
@@ -15,17 +28,41 @@ nav {
 	z-index: 99;
 }
 
-.menu-btn span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background: rgb(0,0,0);
-	z-index: 99;
+    
+.menu-btn > div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    background: #fff;
+    background: -moz-linear-gradient(top, #e01500 0%, #e0150f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e01500), color-stop(100%, #e0150f));
+    background: -webkit-linear-gradient(top, #e01500 0%, #e0150f 100%);
+    background: -o-linear-gradient(top, #e01500 0%, #e0150f 100%);
+    background: -ms-linear-gradient(top, #e01500 0%, #e0150f 100%);
+    background: linear-gradient(to bottom, #e01500 0%, #e0150f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e01500', endColorstr='#e0150f', GradientType=0);
 }
 
+.hamburger > div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    width: 90%;    
+}    
+
 .responsive-menu{
-	display: none;
+	display: inline-block;
+    text-decoration: none;
+    list-style: none;
 }
 
 .expand {
