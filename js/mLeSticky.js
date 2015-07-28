@@ -16,30 +16,3 @@ jQuery(document).ready(function() {
         }
     });
 });
-
-
-/*resizing the nav buttons on window resize
-
-window.onresize = function(){
-    var img = document.getElementById('fullsize');
-    img.style.height = "100%";
-};*/
-
-/**
- * Conserve aspect ratio of the original region. Useful when shrinking/enlarging
- * images to fit into a certain area.
- *
- * @param {Number} srcWidth Source area width
- * @param {Number} srcHeight Source area height
- * @param {Number} maxWidth Fittable area maximum available width
- * @param {Number} maxHeight Fittable area maximum available height
- * @return {Object} { width, heigth }
- *
- * http://stackoverflow.com/questions/3971841/how-to-resize-images-proportionally-keeping-the-aspect-ratio
- */
-function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
-
-    var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
-
-    return { width: srcWidth*ratio, height: srcHeight*ratio };
-}
