@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/mLeSTYLE.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
         
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
@@ -12,6 +13,28 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script src="js/mLeSticky.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+	jQuery(function($){
+    	$( '.menu-btn' ).click(function(){
+    		$('.responsive-menu').addClass('expand')
+    		$('.menu-btn').addClass('btn-none')
+    	})
+
+    	 $( '.close-btn' ).click(function(){
+    		$('.responsive-menu').removeClass('expand')
+    		$('.menu-btn').removeClass('btn-none')
+    	})
+  	})
+</script>
+
+    <script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
         
 </head>
 <body>
@@ -24,6 +47,27 @@
       <div id="rect2" class="showRect"></div> 
       <div id="rect3" class="showRect"></div> 
   </button>
+
+<div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+	<div></div>
+	<span></span>
+	<span></span>
+	<span></span>
+     </div>
+
+     <div class="responsive-menu">
+        <ul>
+           <li><a href="mLeDESIGNS.html">Home</a></li>
+           <li><a href="mLe_pages/mLe_PORTFOLIO.html">Portfolio</a></li>
+            <li><a href="mLe_pages/mLe_ABOUT.html">About</a></li>
+            <li><a href="mLe_pages/mLe_BLOG.html">Blog</a></li>
+            <li><a href="mLe_pages/mLe_SAMPLE.html">Sample</a></li>
+            <li><a href="mLe_pages/mLe_PROJECT.html">Project</a></li>
+            <li><a href="mLe_pages/mLe_CONTACT.html">Contact</a></li>
+        </ul>
+     </div>
+</div>
 
 <!--http://stackoverflow.com/questions/5060923/how-to-stretch-html-css-horizontal-navigation-items-evenly-and-fully-across-a/17951253#17951253
     http://highintegritydesign.com/equally-spaced-variable-width-justified-navigation-links-three-ways/ -->
