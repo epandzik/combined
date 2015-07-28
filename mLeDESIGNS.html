@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/mLeSTYLE.css">
-    <link rel="stylesheet" href="css/slimMenu/slimmenu.css" type="text/css">
         
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400' rel='stylesheet' type='text/css'>
@@ -14,29 +13,22 @@
 
     <script src="js/mLeSticky.js" type="text/javascript"></script>
         
-    <script src="jquery.slimmenu.min.js"></script>        
-<!-- slim menu initialization -->        
-<script>
-        $('#navigation').slimmenu(
-{
-    resizeWidth: '800',
-    collapserTitle: 'Main Menu',
-    animSpeed: 'medium',
-    easingEffect: null,
-    indentChildren: false,
-    childrenIndenter: '&nbsp;'
-});
-</script>  
-        
 </head>
 <body>
 <span id="swap">
     <img id="masthead" src="assets/mLe_GIFnoLoop.gif" alt="" style="width:100%">
 </span>
 <nav>
+    <button id="hamb">
+      <div id="rect1" class="showRect"></div> 
+      <div id="rect2" class="showRect"></div> 
+      <div id="rect3" class="showRect"></div> 
+  </button>
+
 <!--http://stackoverflow.com/questions/5060923/how-to-stretch-html-css-horizontal-navigation-items-evenly-and-fully-across-a/17951253#17951253
     http://highintegritydesign.com/equally-spaced-variable-width-justified-navigation-links-three-ways/ -->
-    <ul class="navList" id="navigation" class="slimmenu">
+<div id="slideDown" class="hidden">    
+    <ul class="navList">
         <li><a href="mLeDESIGNS.html">Home</a></li>
         <li><a href="mLe_pages/mLe_PORTFOLIO.html">Portfolio</a></li>
         <li><a href="mLe_pages/mLe_ABOUT.html">About</a></li>
@@ -45,6 +37,7 @@
         <li><a href="mLe_pages/mLe_PROJECT.html">Project</a></li>
         <li><a href="mLe_pages/mLe_CONTACT.html">Contact</a></li>
     </ul>
+</div>
 </nav>
 <h1>This is a header!</h1>
 <p>m.L.e. DESIGNS is a single woman design company. I started doing freelance graphic design work while living in Portland, Oregon and have continued after I moved back to my hometown of Kansas City, Missouri. I’ve done work for various start-ups and small businesses, as well as in-house design for larger hospitals and software companies. I’ve a bit of experience with advertising as well.</p>
