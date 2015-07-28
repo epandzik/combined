@@ -21,4 +21,41 @@ video {
     width:100%;
     height:auto;
     z-index:49;
+    border-bottom: 1px solid #fff;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.75em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.5em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.25em;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;    
+	color:#000;
+    padding-left: 6.82%;
+    padding-right: 15.91%;
+    padding-bottom: 1.705%;
+    font-size: 1em;
 }

@@ -31,6 +31,7 @@ p {
     padding-right: 15.91%;
     font-family: "Gentium Book Basic", serif;
     padding-bottom: 1.705%;
+    font-size: 1em;
 }
 
 body {
@@ -44,8 +45,7 @@ body {
     height:auto;
 }
 
-/*
-https://www.emailonacid.com/blog/article/email-development/a_slick_new_image_swapping_technique_for_responsive_emails
+/*https://www.emailonacid.com/blog/article/email-development/a_slick_new_image_swapping_technique_for_responsive_emails
 @media only screen and (max-device-width: 480px) {
 span#swap {
     display: block;
@@ -60,9 +60,10 @@ span#swap {
 }
 */
 
-
-
-
+@media only screen and (max-device-width: 480px) {
+    
+}
+    
 /* http://stackoverflow.com/questions/21610677/how-evenly-space-divs-each-of-a-different-width-within-a-parent-div */
 .navList {
     display: flex;
@@ -72,7 +73,8 @@ span#swap {
     margin-bottom: 3.41%;
     height:auto;
     list-style:none;
-    font-size: 2.5vw;
+    font-size: 3.25vw;
+    text-style: bold;
     white-space: nowrap;
     background-color: white;
 }
@@ -154,7 +156,7 @@ a:link,
 a:visited {
     text-decoration: none;
     font-family: "Gentium Book Basic", serif;
-    color: #555;
+    color: #000;
 }
 
 /* mouse over and selected links */
